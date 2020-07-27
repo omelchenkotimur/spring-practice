@@ -1,24 +1,13 @@
 package org.example;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Component
-public class RockMusic implements Music {
-
-    private List<String> songs = new ArrayList<>();
-
-    {
-        songs.add("Manowar - Number One");
-        songs.add("Metallica - fuel");
-        songs.add("Grave Digger - Round table");
-
-    }
-
+@Scope("prototype")
+public class RockMusic implements Music{
     @Override
-    public List<String> getSongs() {
-        return songs;
+    public String getSong() {
+        return "Manowar - Number One";
     }
 }

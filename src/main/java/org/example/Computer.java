@@ -3,7 +3,7 @@ package org.example;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-/*@Component
+@Component
 public class Computer {
 
     private String name;
@@ -19,4 +19,4 @@ public class Computer {
     public String toString() {
         return "Computer " + name + " " + musicPlayer.PlayMusic();
     }
-}*/
+}
